@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>150+ KNEC Student Project Titles — Jonathan Mawia</title>
+<meta name="description" content="151 KNEC diploma and certificate student project titles with problem statements, technology stacks and categories. Compiled by Jonathan Mawia, NIBS College."/>
+<meta name="theme-color" content="#0a1628"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="150+ KNEC Student Project Titles — Jonathan Mawia"/>
+<meta property="og:description" content="Searchable list of 151 web and mobile project ideas with problem statements and recommended technologies."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/></noscript>
+<style>
+:root {
+  --navy: #0a1628;
+  --navy2: #112240;
+  --gold: #c9a84c;
+  --gold2: #e8c96a;
+  --cream: #faf8f3;
+  --slate: #8892a4;
+  --light: #f0eff9;
+  --white: #ffffff;
+  --green: #1a5c38;
+  --green-bg: #d1f4e0;
+  --blue-bg: #dce8ff;
+  --blue: #1a3a7c;
+  --purple-bg: #ede9fe;
+  --purple: #5b21b6;
+  --text: #1a1a2e;
+  --border: #dde2ef;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* ── HEADER ── */
+.hero {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+  padding: 56px 48px 48px;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 80% 0%, rgba(201,168,76,0.18) 0%, transparent 60%),
+              radial-gradient(ellipse at 10% 100%, rgba(26,92,56,0.2) 0%, transparent 55%);
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  right: -60px; top: -60px;
+  width: 340px; height: 340px;
+  border: 1px solid rgba(201,168,76,0.15);
+  border-radius: 50%;
+}
+.hero-inner { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; }
+
+.institution-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(201,168,76,0.15);
+  border: 1px solid rgba(201,168,76,0.35);
+  color: var(--gold2);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 40px;
+  margin-bottom: 22px;
+}
+.institution-tag svg { width: 12px; height: 12px; fill: var(--gold2); }
+
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  max-width: 700px;
+}
+.hero h1 span { color: var(--gold2); }
+
+.hero-sub {
+  font-size: 15px;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 36px;
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.author-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 14px;
+  padding: 16px 24px;
+  backdrop-filter: blur(8px);
+}
+.author-avatar {
+  width: 46px; height: 46px;
+  background: linear-gradient(135deg, var(--gold), #8b5a0a);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: 18px; font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+.author-info { line-height: 1.4; }
+.author-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+.author-role {
+  font-size: 12px;
+  color: var(--gold2);
+  font-weight: 400;
+  margin-top: 2px;
+}
+.author-badge {
+  margin-left: 18px;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* ── STATS BAR ── */
+.stats-bar {
+  background: var(--navy2);
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+  padding: 16px 48px;
+}
+.stats-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.stat-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+}
+.stat-num {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gold2);
+  line-height: 1;
+}
+.stat-sep { width: 1px; height: 28px; background: rgba(255,255,255,0.1); }
+
+/* ── CONTROLS ── */
+.controls-wrap {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+.controls {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 48px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.search-box {
+  position: relative;
+  flex: 1;
+  min-width: 220px;
+}
+.search-box svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px; height: 16px;
+  color: #aaa;
+  pointer-events: none;
+}
+.search-box input {
+  width: 100%;
+  padding: 9px 12px 9px 38px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  font-family: 'DM Sans', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 13.5px;
+  color: var(--text);
+  background: #fafafa;
+  transition: border-color .2s, box-shadow .2s;
+  outline: none;
+}
+.search-box input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201,168,76,0.12);
+  background: #fff;
+}
+.select-wrap select {
+  padding: 9px 32px 9px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  font-family: 'DM Sans', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 13px;
+  color: var(--text);
+  background: #fafafa;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  outline: none;
+  transition: border-color .2s;
+}
+.select-wrap select:focus { border-color: var(--gold); }
+
+.count-badge {
+  background: var(--navy);
+  color: var(--gold2);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+/* ── TABLE ── */
+.table-wrap {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 0 48px 60px;
+}
+.table-scroll {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+thead th {
+  background: var(--navy);
+  color: rgba(255,255,255,0.7);
+  font-family: 'DM Sans', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  padding: 13px 16px;
+  text-align: left;
+  white-space: nowrap;
+}
+thead th:first-child { border-radius: 0; padding-left: 20px; }
+thead th:last-child { text-align: center; }
+
+tbody tr {
+  border-bottom: 1px solid #f0f2f8;
+  transition: background .15s;
+}
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: #fffbf0; }
+tbody tr:nth-child(even) { background: #fafbff; }
+tbody tr:nth-child(even):hover { background: #fffbf0; }
+
+tbody td {
+  padding: 12px 16px;
+  vertical-align: top;
+  line-height: 1.55;
+}
+tbody td:first-child { padding-left: 20px; }
+
+.num {
+  color: #c0c8d8;
+  font-size: 11.5px;
+  font-family: 'DM Mono', 'Courier New', monospace;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.title-cell {
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 13.5px;
+  max-width: 220px;
+}
+.prob-cell {
+  color: #4a5568;
+  font-size: 13px;
+  max-width: 280px;
+}
+.lang-chip {
+  display: inline-block;
+  font-family: 'DM Mono', 'Courier New', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  background: #f3f4f6;
+  color: #374151;
+  padding: 3px 9px;
+  border-radius: 5px;
+  border: 1px solid #e5e7eb;
+  line-height: 1.6;
+}
+.cat-cell {
+  color: var(--slate);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 11px;
+  border-radius: 20px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.bw { background: var(--blue-bg); color: var(--blue); }
+.ba { background: var(--green-bg); color: var(--green); }
+.bb { background: var(--purple-bg); color: var(--purple); }
+td:last-child { text-align: center; }
+
+.no-results {
+  display: none;
+  text-align: center;
+  padding: 60px 20px;
+  color: #aaa;
+}
+.no-results svg { width: 40px; height: 40px; margin-bottom: 12px; opacity: .3; }
+.no-results p { font-size: 15px; margin-top: 6px; }
+
+/* ── FOOTER ── */
+.footer {
+  background: var(--navy);
+  color: rgba(255,255,255,0.45);
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 12px;
+}
+.footer strong { color: var(--gold2); }
+
+/* ── HIGHLIGHT ── */
+mark {
+  background: rgba(201,168,76,0.3);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+@media (max-width: 700px) {
+  .hero { padding: 36px 20px 32px; }
+  .stats-bar { padding: 14px 20px; }
+  .controls { padding: 12px 16px; }
+  .table-wrap { padding: 0 12px 40px; }
+  .author-badge { display: none; }
+  table { font-size: 12px; }
+  tbody td { padding: 10px 10px; }
+}
+
+/* ===== MOBILE-FRIENDLY ADDITIONS ===== */
+html { -webkit-text-size-adjust: 100%; }
+body { overflow-x: hidden; }
+.controls input, .controls select { font-size: 16px; } /* stops iPhone zooming in on tap */
+.hidden-row { display: none !important; }
+
+@media (max-width: 760px) {
+  .hero h1 { font-size: 30px; }
+  .hero-sub { font-size: 14px; margin-bottom: 24px; }
+  .author-card { padding: 12px 14px; }
+  .stats-inner { flex-wrap: wrap; gap: 10px; }
+  .stat-sep { display: none; }
+  .controls { flex-wrap: wrap; gap: 8px; }
+  .search-box { flex: 1 1 100%; min-width: 0; }
+  .select-wrap { flex: 1 1 30%; min-width: 0; }
+  .select-wrap select { width: 100%; }
+  .count-badge { margin-left: 0; }
+  .table-wrap { padding: 0 10px 40px; margin-top: 16px; }
+  .table-scroll { background: transparent; border: 0; box-shadow: none; border-radius: 0; overflow: visible; }
+
+  /* Table becomes a list of cards */
+  table, tbody, tr, td { display: block; width: 100%; }
+  colgroup, thead { display: none; }
+  tbody tr {
+    background: #fff !important; border: 1px solid var(--border); border-radius: 14px;
+    margin-bottom: 12px; padding: 14px 14px 12px; box-shadow: 0 2px 10px rgba(0,0,0,.05);
+    position: relative;
+  }
+  tbody td { padding: 0 !important; max-width: none !important; text-align: left !important; white-space: normal !important; }
+  td.num { position: absolute; top: 14px; right: 14px; width: auto; color: var(--gold); }
+  td.title-cell { font-size: 15px; padding-right: 44px !important; margin-bottom: 6px; }
+  td.prob-cell { font-size: 13.5px; margin-bottom: 10px; }
+  td.prob-cell:before { content: "Problem: "; font-weight: 600; color: var(--navy); }
+  td.lang-td, td.cat-cell, td.type-td { display: inline-block; width: auto; margin: 0 6px 4px 0; vertical-align: middle; }
+  td.cat-cell { background: #f0f2f8; color: #4a5568; padding: 3px 9px !important; border-radius: 5px; font-size: 11px; }
+}
+
+@media print {
+  .controls-wrap { display: none; }
+  .table-scroll { box-shadow: none; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="institution-tag">
+      <svg viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+      NIBS College — Computer Science Department
+    </div>
+    <h1>150+ KNEC Student<br/><span>Project Titles</span></h1>
+    <p class="hero-sub">A curated collection of web-based and mobile application project topics for diploma and certificate students — covering problem statements, recommended technology stacks, and project categories.</p>
+    <div class="author-card">
+      <div class="author-avatar">JM</div>
+      <div class="author-info">
+        <div class="author-name">Jonathan Mawia</div>
+        <div class="author-role">Computer Science Lecturer &nbsp;·&nbsp; NIBS College</div>
+      </div>
+      <div class="author-badge">Compiled &amp; Prepared</div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-pill"><div class="stat-num">151</div><div>Project<br/>Titles</div></div>
+    <div class="stat-sep"></div>
+    <div class="stat-pill"><div class="stat-num">24</div><div>Subject<br/>Categories</div></div>
+    <div class="stat-sep"></div>
+    <div class="stat-pill"><div class="stat-num">6+</div><div>Technology<br/>Stacks</div></div>
+    <div class="stat-sep"></div>
+    <div class="stat-pill"><div class="stat-num">3</div><div>Project<br/>Types</div></div>
+  </div>
+</div>
+
+<!-- CONTROLS -->
+<div class="controls-wrap">
+  <div class="controls">
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" id="search" aria-label="Search projects" placeholder="Search project titles, languages, categories…" oninput="f()" autocomplete="off"/>
+    </div>
+    <div class="select-wrap">
+      <select id="tf" aria-label="Filter by type" onchange="f()">
+        <option value="">All Types</option>
+        <option>Web</option><option>App</option><option>Both</option>
+      </select>
+    </div>
+    <div class="select-wrap">
+      <select id="lf" aria-label="Filter by language" onchange="f()">
+        <option value="">All Languages</option>
+        <option>PHP</option><option>Python</option><option>JavaScript</option>
+        <option>React</option><option>Node.js</option><option>Django</option><option>Flutter</option><option>Firebase</option><option>Java</option>
+      </select>
+    </div>
+    <div class="select-wrap">
+      <select id="cf" aria-label="Filter by category" onchange="f()">
+        <option value="">All Categories</option>
+        <option>Academic</option><option>Agriculture</option><option>Commerce</option><option>Education</option><option>Employment</option><option>Environment</option><option>Events</option><option>Finance</option><option>Governance</option><option>HR</option><option>Health</option><option>Hospitality</option><option>Legal</option><option>Lifestyle</option><option>Media</option><option>Real Estate</option><option>Research</option><option>Security</option><option>Services</option><option>Social</option><option>Sports</option><option>Tourism</option><option>Transport</option><option>Utilities</option>
+      </select>
+    </div>
+    <div class="count-badge" id="st">151 of 151</div>
+  </div>
+</div>
+
+<!-- TABLE -->
+<div class="table-wrap">
+  <div class="table-scroll">
+    <table id="tbl">
+      <colgroup>
+        <col style="width:44px"/>
+        <col style="width:21%"/>
+        <col style="width:28%"/>
+        <col style="width:22%"/>
+        <col style="width:10%"/>
+        <col style="width:9%"/>
+      </colgroup>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Project Title</th>
+          <th>Problem It Solves</th>
+          <th>Language / Stack</th>
+          <th>Category</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody id="tb">
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, HTML/CSS"><td class="num">001</td><td class="title-cell">Student Result Management System</td><td class="prob-cell">Manual result processing is slow and prone to errors</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, HTML/CSS</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Finance" data-l="PHP, MySQL, M-Pesa API"><td class="num">002</td><td class="title-cell">Online Fee Payment Portal</td><td class="prob-cell">Parents cannot pay school fees remotely</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, M-Pesa API</span></td><td class="cat-cell">Finance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, Bootstrap"><td class="num">003</td><td class="title-cell">Library Book Management System</td><td class="prob-cell">Tracking borrowed books manually is tedious</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Health" data-l="PHP, MySQL, HTML/CSS"><td class="num">004</td><td class="title-cell">Hospital Appointment Booking</td><td class="prob-cell">Long queues and missed appointments at clinics</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, HTML/CSS</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Both" data-c="Academic" data-l="Python, Django, SQLite"><td class="num">005</td><td class="title-cell">School Attendance Tracker</td><td class="prob-cell">Manual attendance registers are lost or forged</td><td class="lang-td"><span class="lang-chip">Python, Django, SQLite</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, JavaScript"><td class="num">006</td><td class="title-cell">Online Exam System</td><td class="prob-cell">Paper exams are costly and slow to mark</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, JavaScript</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Governance" data-l="PHP, MySQL, Bootstrap"><td class="num">007</td><td class="title-cell">CDF Transparency Portal</td><td class="prob-cell">CDF fund usage lacks accountability and visibility</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Governance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Health" data-l="Flutter, Firebase"><td class="num">008</td><td class="title-cell">Community Health Worker App</td><td class="prob-cell">CHWs lack tools to record patient visit data</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Both" data-c="Transport" data-l="React, Node.js, MySQL"><td class="num">009</td><td class="title-cell">Matatu Booking System</td><td class="prob-cell">Passengers waste time queuing for seats</td><td class="lang-td"><span class="lang-chip">React, Node.js, MySQL</span></td><td class="cat-cell">Transport</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Agriculture" data-l="PHP, MySQL, Bootstrap"><td class="num">010</td><td class="title-cell">Farm Produce Marketplace</td><td class="prob-cell">Farmers get low prices due to middlemen</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Agriculture</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Agriculture" data-l="Python, TensorFlow, Flutter"><td class="num">011</td><td class="title-cell">Crop Disease Diagnosis App</td><td class="prob-cell">Farmers cannot identify crop diseases early</td><td class="lang-td"><span class="lang-chip">Python, TensorFlow, Flutter</span></td><td class="cat-cell">Agriculture</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Utilities" data-l="PHP, MySQL, HTML/CSS"><td class="num">012</td><td class="title-cell">Water Kiosk Management System</td><td class="prob-cell">Water vendors lack sales records and reports</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, HTML/CSS</span></td><td class="cat-cell">Utilities</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Education" data-l="PHP, MySQL, Bootstrap"><td class="num">013</td><td class="title-cell">Bursary Application Portal</td><td class="prob-cell">Needy students miss bursaries due to poor information</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Education</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Employment" data-l="PHP, MySQL, HTML/CSS"><td class="num">014</td><td class="title-cell">Online Job Board</td><td class="prob-cell">Job seekers lack access to local job listings</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, HTML/CSS</span></td><td class="cat-cell">Employment</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Education" data-l="React, Node.js, MongoDB"><td class="num">015</td><td class="title-cell">Mentor-Mentee Matching Platform</td><td class="prob-cell">Students lack guidance from working professionals</td><td class="lang-td"><span class="lang-chip">React, Node.js, MongoDB</span></td><td class="cat-cell">Education</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Both" data-c="Health" data-l="PHP, MySQL, SMS API"><td class="num">016</td><td class="title-cell">Blood Donation Management System</td><td class="prob-cell">Blood banks struggle to find donors urgently</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, SMS API</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Environment" data-l="PHP, MySQL, Google Maps API"><td class="num">017</td><td class="title-cell">Municipal Waste Complaint Portal</td><td class="prob-cell">Residents have no easy way to report garbage issues</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Google Maps API</span></td><td class="cat-cell">Environment</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="React, Firebase"><td class="num">018</td><td class="title-cell">Digital Notice Board</td><td class="prob-cell">Physical notice boards are outdated or ignored</td><td class="lang-td"><span class="lang-chip">React, Firebase</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, Bootstrap"><td class="num">019</td><td class="title-cell">Hostel Room Allocation System</td><td class="prob-cell">Room allocation in hostels is manual and chaotic</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Both" data-c="Events" data-l="PHP, MySQL, M-Pesa API"><td class="num">020</td><td class="title-cell">Event Ticketing Platform</td><td class="prob-cell">Local events lack a digital ticketing system</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, M-Pesa API</span></td><td class="cat-cell">Events</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Health" data-l="PHP, MySQL, Bootstrap"><td class="num">021</td><td class="title-cell">Online Clinic Records System</td><td class="prob-cell">Patient records are paper-based and easily lost</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Employment" data-l="React, Node.js, MySQL"><td class="num">022</td><td class="title-cell">Freelancer Gig Platform</td><td class="prob-cell">Local freelancers have no platform to find work</td><td class="lang-td"><span class="lang-chip">React, Node.js, MySQL</span></td><td class="cat-cell">Employment</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Both" data-c="Real Estate" data-l="PHP, MySQL, Google Maps API"><td class="num">023</td><td class="title-cell">Rental Property Listing App</td><td class="prob-cell">Tenants waste time searching for rental houses</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Google Maps API</span></td><td class="cat-cell">Real Estate</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Both" data-c="Commerce" data-l="JavaScript, Firebase"><td class="num">024</td><td class="title-cell">Digital Receipt Generator</td><td class="prob-cell">Small businesses issue handwritten paper receipts</td><td class="lang-td"><span class="lang-chip">JavaScript, Firebase</span></td><td class="cat-cell">Commerce</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Finance" data-l="PHP, MySQL, Bootstrap"><td class="num">025</td><td class="title-cell">Savings Group (Chama) Manager</td><td class="prob-cell">Chamas track contributions in notebooks manually</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Finance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Transport" data-l="Flutter, Google Maps, Firebase"><td class="num">026</td><td class="title-cell">School Bus Tracking System</td><td class="prob-cell">Parents cannot monitor school bus location</td><td class="lang-td"><span class="lang-chip">Flutter, Google Maps, Firebase</span></td><td class="cat-cell">Transport</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="HR" data-l="PHP, MySQL, Bootstrap"><td class="num">027</td><td class="title-cell">Staff Leave Management System</td><td class="prob-cell">Leave applications are paper-based and slow</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">HR</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Legal" data-l="PHP, MySQL, HTML/CSS"><td class="num">028</td><td class="title-cell">Court Case Tracking Portal</td><td class="prob-cell">Litigants cannot monitor their case progress online</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, HTML/CSS</span></td><td class="cat-cell">Legal</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Health" data-l="Flutter, Firebase"><td class="num">029</td><td class="title-cell">Vaccination Record App</td><td class="prob-cell">Children&#x27;s vaccination history is easily lost</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Both" data-c="Commerce" data-l="PHP, MySQL, M-Pesa API"><td class="num">030</td><td class="title-cell">Online Grocery Ordering System</td><td class="prob-cell">Customers lack a way to order groceries remotely</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, M-Pesa API</span></td><td class="cat-cell">Commerce</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, QR Code Library"><td class="num">031</td><td class="title-cell">Digital Student ID Card System</td><td class="prob-cell">Physical IDs are expensive and can be forged</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, QR Code Library</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Security" data-l="PHP, MySQL, Bootstrap"><td class="num">032</td><td class="title-cell">Police Incident Reporting Portal</td><td class="prob-cell">Reporting a crime requires physical presence at station</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Security</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Education" data-l="PHP, MySQL, Bootstrap"><td class="num">033</td><td class="title-cell">E-Learning Platform</td><td class="prob-cell">Students lack access to quality digital learning content</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Education</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Governance" data-l="PHP, MySQL, Chart.js"><td class="num">034</td><td class="title-cell">NGO Project Tracking System</td><td class="prob-cell">NGOs struggle to monitor and report project progress</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Chart.js</span></td><td class="cat-cell">Governance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Both" data-c="Transport" data-l="React, Google Maps API"><td class="num">035</td><td class="title-cell">Public Transport Route Finder</td><td class="prob-cell">Commuters don&#x27;t know which matatu route goes where</td><td class="lang-td"><span class="lang-chip">React, Google Maps API</span></td><td class="cat-cell">Transport</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="App" data-c="Agriculture" data-l="Flutter, Firebase"><td class="num">036</td><td class="title-cell">Livestock Health Record App</td><td class="prob-cell">Farmers lose their animals&#x27; health history</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase</span></td><td class="cat-cell">Agriculture</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Governance" data-l="PHP, MySQL, Bootstrap"><td class="num">037</td><td class="title-cell">Online Tender Portal</td><td class="prob-cell">Tender information is scattered and hard to access</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Governance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Governance" data-l="React, Firebase"><td class="num">038</td><td class="title-cell">Digital Voter Education Platform</td><td class="prob-cell">Voters lack reliable civic education resources</td><td class="lang-td"><span class="lang-chip">React, Firebase</span></td><td class="cat-cell">Governance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Finance" data-l="PHP, MySQL, M-Pesa API"><td class="num">039</td><td class="title-cell">Crowdfunding Platform</td><td class="prob-cell">Community projects lack a digital fundraising tool</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, M-Pesa API</span></td><td class="cat-cell">Finance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Services" data-l="Flutter, Firebase, Google Maps"><td class="num">040</td><td class="title-cell">Mechanic Booking App</td><td class="prob-cell">Car owners struggle to find trusted mechanics nearby</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase, Google Maps</span></td><td class="cat-cell">Services</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Services" data-l="PHP, MySQL, Bootstrap"><td class="num">041</td><td class="title-cell">Tailoring Order Management System</td><td class="prob-cell">Tailors manage orders on paper leading to errors</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Services</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Health" data-l="PHP, MySQL, Bootstrap"><td class="num">042</td><td class="title-cell">Pharmacy Stock Management System</td><td class="prob-cell">Pharmacies run out of medicine unexpectedly</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Health" data-l="PHP, MySQL, Video API"><td class="num">043</td><td class="title-cell">Online Counseling Platform</td><td class="prob-cell">Students struggle to access mental health support</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Video API</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Both" data-c="Services" data-l="PHP, MySQL, Bootstrap"><td class="num">044</td><td class="title-cell">Pest Control Booking System</td><td class="prob-cell">Pest control services are hard to find and book</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Services</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="App" data-c="Education" data-l="Flutter, Dart"><td class="num">045</td><td class="title-cell">Children&#x27;s Learning Game App</td><td class="prob-cell">Young learners lack engaging digital study tools</td><td class="lang-td"><span class="lang-chip">Flutter, Dart</span></td><td class="cat-cell">Education</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Both" data-c="Social" data-l="React, Firebase"><td class="num">046</td><td class="title-cell">Disability Services Directory</td><td class="prob-cell">Disabled persons don&#x27;t know available support services</td><td class="lang-td"><span class="lang-chip">React, Firebase</span></td><td class="cat-cell">Social</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Agriculture" data-l="PHP, MySQL, Bootstrap"><td class="num">047</td><td class="title-cell">Milk Bulking Cooperative System</td><td class="prob-cell">Dairy cooperatives track milk deliveries manually</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Agriculture</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Governance" data-l="PHP, MySQL, Bootstrap"><td class="num">048</td><td class="title-cell">Online Complaint Management System</td><td class="prob-cell">Citizens have no formal digital channel for complaints</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Governance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Media" data-l="React, Node.js, RSS API"><td class="num">049</td><td class="title-cell">Local News Aggregator</td><td class="prob-cell">Local news is scattered across many platforms</td><td class="lang-td"><span class="lang-chip">React, Node.js, RSS API</span></td><td class="cat-cell">Media</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Both" data-c="Employment" data-l="React, Firebase"><td class="num">050</td><td class="title-cell">Interview Preparation App</td><td class="prob-cell">Job seekers lack structured interview practice tools</td><td class="lang-td"><span class="lang-chip">React, Firebase</span></td><td class="cat-cell">Employment</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Both" data-c="Commerce" data-l="PHP, MySQL, Bootstrap"><td class="num">051</td><td class="title-cell">Second-Hand Goods Marketplace</td><td class="prob-cell">Used items are discarded instead of being resold</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Commerce</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Social" data-l="PHP, MySQL, Bootstrap"><td class="num">052</td><td class="title-cell">Digital Prayer Request Board</td><td class="prob-cell">Church members submit prayer requests informally</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Social</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Health" data-l="Flutter, Firebase"><td class="num">053</td><td class="title-cell">Remote Patient Monitoring App</td><td class="prob-cell">Chronic illness patients lack daily health tracking tools</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, Bootstrap"><td class="num">054</td><td class="title-cell">School Sports Management System</td><td class="prob-cell">Sports tournaments are poorly organized and undocumented</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Finance" data-l="PHP, MySQL, Bootstrap"><td class="num">055</td><td class="title-cell">SACCO Loan Management System</td><td class="prob-cell">SACCOs process loan applications manually</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Finance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Hospitality" data-l="PHP, MySQL, Bootstrap"><td class="num">056</td><td class="title-cell">Hotel Reservation System</td><td class="prob-cell">Small hotels manage bookings via phone with no records</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Hospitality</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, Bootstrap"><td class="num">057</td><td class="title-cell">Student Project Repository</td><td class="prob-cell">Completed student projects are lost after graduation</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Both" data-c="Lifestyle" data-l="React, Firebase"><td class="num">058</td><td class="title-cell">Digital Recipe Platform</td><td class="prob-cell">Home cooks struggle to find local recipe guides</td><td class="lang-td"><span class="lang-chip">React, Firebase</span></td><td class="cat-cell">Lifestyle</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Social" data-l="PHP, MySQL, Bootstrap"><td class="num">059</td><td class="title-cell">Volunteer Management System</td><td class="prob-cell">Organizations struggle to coordinate volunteers</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Social</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Legal" data-l="PHP, MySQL, Bootstrap"><td class="num">060</td><td class="title-cell">Online Legal Aid Directory</td><td class="prob-cell">Low-income citizens don&#x27;t know free legal services available</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Legal</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Agriculture" data-l="Python, Django, Weather API"><td class="num">061</td><td class="title-cell">Drought Early Warning System</td><td class="prob-cell">Farmers lack timely drought alerts for planning</td><td class="lang-td"><span class="lang-chip">Python, Django, Weather API</span></td><td class="cat-cell">Agriculture</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Social" data-l="PHP, MySQL, Bootstrap"><td class="num">062</td><td class="title-cell">Church Member Management System</td><td class="prob-cell">Churches track tithes and attendance in paper registers</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Social</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Governance" data-l="PHP, MySQL, Bootstrap"><td class="num">063</td><td class="title-cell">Digital Land Records System</td><td class="prob-cell">Land disputes arise from poor and incomplete record keeping</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Governance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="HR" data-l="PHP, MySQL, Chart.js"><td class="num">064</td><td class="title-cell">Employee Performance Tracker</td><td class="prob-cell">Companies lack tools to evaluate staff performance digitally</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Chart.js</span></td><td class="cat-cell">HR</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Research" data-l="PHP, MySQL, Bootstrap"><td class="num">065</td><td class="title-cell">Online Survey Platform</td><td class="prob-cell">Researchers collect data using costly paper questionnaires</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Research</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Transport" data-l="PHP, MySQL, Bootstrap"><td class="num">066</td><td class="title-cell">Rental Car Booking System</td><td class="prob-cell">Car hire is booked by phone with no digital records</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Transport</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Health" data-l="Flutter, Firebase"><td class="num">067</td><td class="title-cell">Digital Fitness Tracker App</td><td class="prob-cell">People lack tools to track personal fitness and health goals</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Health" data-l="PHP, MySQL, SMS API"><td class="num">068</td><td class="title-cell">Health Alert Notification Portal</td><td class="prob-cell">Communities lack a health alert and outbreak notification system</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, SMS API</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Commerce" data-l="PHP, MySQL, Bootstrap"><td class="num">069</td><td class="title-cell">Product Expiry Tracker</td><td class="prob-cell">Shops unknowingly sell expired goods due to poor stock monitoring</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Commerce</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Education" data-l="React, Node.js, Firebase"><td class="num">070</td><td class="title-cell">Peer Tutoring Platform</td><td class="prob-cell">Struggling students cannot easily find peer tutors</td><td class="lang-td"><span class="lang-chip">React, Node.js, Firebase</span></td><td class="cat-cell">Education</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Social" data-l="PHP, MySQL, Bootstrap"><td class="num">071</td><td class="title-cell">Online Funeral Announcement Board</td><td class="prob-cell">Death announcements rely on informal word-of-mouth sharing</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Social</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Environment" data-l="Flutter, Firebase"><td class="num">072</td><td class="title-cell">Garbage Collection Schedule App</td><td class="prob-cell">Residents don&#x27;t know their garbage collection days and routes</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase</span></td><td class="cat-cell">Environment</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, Bootstrap"><td class="num">073</td><td class="title-cell">Digital Report Card System</td><td class="prob-cell">Report cards are slow to print and can be easily falsified</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Services" data-l="Flutter, Google Maps, Firebase"><td class="num">074</td><td class="title-cell">Home Service Provider App</td><td class="prob-cell">People struggle to find trusted plumbers and electricians</td><td class="lang-td"><span class="lang-chip">Flutter, Google Maps, Firebase</span></td><td class="cat-cell">Services</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Education" data-l="PHP, MySQL, Bootstrap"><td class="num">075</td><td class="title-cell">Scholarship Management System</td><td class="prob-cell">Scholarship applications are paper-based and lack transparency</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Education</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Academic" data-l="Flutter, Firebase"><td class="num">076</td><td class="title-cell">Parent-Teacher Communication App</td><td class="prob-cell">Parents lack a direct channel to communicate with teachers</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Transport" data-l="PHP, MySQL, Bootstrap"><td class="num">077</td><td class="title-cell">Parking Lot Management System</td><td class="prob-cell">Parking spaces are wasted due to poor management</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Transport</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, Bootstrap"><td class="num">078</td><td class="title-cell">Digital Timetable Generator</td><td class="prob-cell">School timetables are made manually and often have clashes</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Health" data-l="Flutter, Firebase, SMS API"><td class="num">079</td><td class="title-cell">Elderly Care Assistance App</td><td class="prob-cell">Elderly people living alone lack emergency alert tools</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase, SMS API</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Both" data-c="Social" data-l="React, Firebase"><td class="num">080</td><td class="title-cell">Community Notice Board App</td><td class="prob-cell">Neighborhood news is shared informally via WhatsApp groups</td><td class="lang-td"><span class="lang-chip">React, Firebase</span></td><td class="cat-cell">Social</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Health" data-l="PHP, MySQL, Bootstrap"><td class="num">081</td><td class="title-cell">Organ Donation Registry</td><td class="prob-cell">No organized system exists to register willing organ donors</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Tourism" data-l="Flutter, Google Maps, Firebase"><td class="num">082</td><td class="title-cell">Tourist Attraction Guide App</td><td class="prob-cell">Tourists lack a reliable local guide for attractions and routes</td><td class="lang-td"><span class="lang-chip">Flutter, Google Maps, Firebase</span></td><td class="cat-cell">Tourism</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="HR" data-l="PHP, MySQL, Bootstrap"><td class="num">083</td><td class="title-cell">Digital Asset Inventory System</td><td class="prob-cell">Organizations lose track of equipment and company assets</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">HR</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, Bootstrap"><td class="num">084</td><td class="title-cell">Canteen Pre-Order System</td><td class="prob-cell">School canteens have very long queues during meal times</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="HR" data-l="PHP, MySQL, Bootstrap"><td class="num">085</td><td class="title-cell">Employee Grievance Tracking System</td><td class="prob-cell">Employee grievances are poorly documented and rarely resolved</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">HR</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Both" data-c="Social" data-l="React, Firebase"><td class="num">086</td><td class="title-cell">Youth Talent Discovery Platform</td><td class="prob-cell">Young talented people lack a platform to showcase their skills</td><td class="lang-td"><span class="lang-chip">React, Firebase</span></td><td class="cat-cell">Social</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="App" data-c="Sports" data-l="Flutter, Firebase"><td class="num">087</td><td class="title-cell">Digital Score Keeper App</td><td class="prob-cell">Sports tournament scores are tracked manually on paper</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase</span></td><td class="cat-cell">Sports</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Legal" data-l="PHP, MySQL, Bootstrap"><td class="num">088</td><td class="title-cell">Legal Case Document Manager</td><td class="prob-cell">Lawyers manage case files and documents in physical folders</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Legal</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Media" data-l="PHP, MySQL, Bootstrap"><td class="num">089</td><td class="title-cell">Online Newspaper Platform</td><td class="prob-cell">Local publications lack a proper digital distribution channel</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Media</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Health" data-l="PHP, MySQL, Bootstrap"><td class="num">090</td><td class="title-cell">Drug Abuse Reporting Portal</td><td class="prob-cell">Drug abuse cases go unreported due to fear and stigma</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Commerce" data-l="JavaScript, Canvas API"><td class="num">091</td><td class="title-cell">Digital Flyer and Poster Maker</td><td class="prob-cell">Small businesses spend money hiring graphic designers</td><td class="lang-td"><span class="lang-chip">JavaScript, Canvas API</span></td><td class="cat-cell">Commerce</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Both" data-c="Agriculture" data-l="Python, Django, Weather API"><td class="num">092</td><td class="title-cell">Weather-Based Farming Advisory</td><td class="prob-cell">Farmers make planting and harvesting decisions without weather data</td><td class="lang-td"><span class="lang-chip">Python, Django, Weather API</span></td><td class="cat-cell">Agriculture</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Education" data-l="PHP, MySQL, Bootstrap"><td class="num">093</td><td class="title-cell">Digital Driving School Manager</td><td class="prob-cell">Driving schools track student progress and payments manually</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Education</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Both" data-c="Education" data-l="React, Firebase"><td class="num">094</td><td class="title-cell">Online Group Study Planner</td><td class="prob-cell">Students lack a tool to schedule and coordinate group study</td><td class="lang-td"><span class="lang-chip">React, Firebase</span></td><td class="cat-cell">Education</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Environment" data-l="Python, Django, IoT API"><td class="num">095</td><td class="title-cell">Water Quality Monitoring Dashboard</td><td class="prob-cell">Communities lack visibility into local water safety levels</td><td class="lang-td"><span class="lang-chip">Python, Django, IoT API</span></td><td class="cat-cell">Environment</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Finance" data-l="Flutter, Firebase"><td class="num">096</td><td class="title-cell">Household Budget Tracker App</td><td class="prob-cell">Families overspend due to lack of a budgeting system</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase</span></td><td class="cat-cell">Finance</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="HR" data-l="PHP, MySQL, Bootstrap"><td class="num">097</td><td class="title-cell">Staff Payroll Management System</td><td class="prob-cell">Small businesses calculate salaries manually using spreadsheets</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">HR</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Commerce" data-l="PHP, MySQL, Bootstrap"><td class="num">098</td><td class="title-cell">Online Furniture Marketplace</td><td class="prob-cell">Buyers lack a local platform to browse and buy furniture</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Commerce</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Security" data-l="PHP, MySQL, Bootstrap"><td class="num">099</td><td class="title-cell">Cyber Bullying Reporting Portal</td><td class="prob-cell">Victims of cyber bullying have no safe and easy reporting tool</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Security</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Hospitality" data-l="PHP, MySQL, Bootstrap"><td class="num">100</td><td class="title-cell">Guest House Management System</td><td class="prob-cell">Small guesthouses track bookings and payments in notebooks</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Hospitality</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Social" data-l="React, Node.js, MySQL"><td class="num">101</td><td class="title-cell">Alumni Network Platform</td><td class="prob-cell">Graduates lose contact with their school communities over time</td><td class="lang-td"><span class="lang-chip">React, Node.js, MySQL</span></td><td class="cat-cell">Social</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, Bootstrap"><td class="num">102</td><td class="title-cell">Digital Student Clearance System</td><td class="prob-cell">Students queue physically for clearance at end of semester</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, Bootstrap"><td class="num">103</td><td class="title-cell">Online Research Proposal Submission</td><td class="prob-cell">Research proposals are submitted via hard copy and often lost</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="React, Node.js, MySQL"><td class="num">104</td><td class="title-cell">Smart Classroom Scheduler</td><td class="prob-cell">Classroom bookings are made verbally and often double-booked</td><td class="lang-td"><span class="lang-chip">React, Node.js, MySQL</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Health" data-l="Flutter, Firebase"><td class="num">105</td><td class="title-cell">Student Mental Health Tracker App</td><td class="prob-cell">Student mental health struggles go undetected by institutions</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="App" data-c="Agriculture" data-l="Flutter, Firebase, AI API"><td class="num">106</td><td class="title-cell">Mobile Crop Advisory App</td><td class="prob-cell">Smallholder farmers lack expert advice on best farming practices</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase, AI API</span></td><td class="cat-cell">Agriculture</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Agriculture" data-l="Python, Django, IoT API"><td class="num">107</td><td class="title-cell">Irrigation Scheduling System</td><td class="prob-cell">Farmers over-irrigate or under-irrigate due to lack of data</td><td class="lang-td"><span class="lang-chip">Python, Django, IoT API</span></td><td class="cat-cell">Agriculture</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Agriculture" data-l="PHP, MySQL, Bootstrap"><td class="num">108</td><td class="title-cell">Poultry Farm Management System</td><td class="prob-cell">Poultry farmers lack digital tools to track flock health</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Agriculture</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Finance" data-l="PHP, MySQL, Bootstrap"><td class="num">109</td><td class="title-cell">Micro-Loan Management Platform</td><td class="prob-cell">Small borrowers lack access to formal digital lending records</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Finance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Finance" data-l="React, Node.js, MySQL"><td class="num">110</td><td class="title-cell">Mobile Banking Agent Portal</td><td class="prob-cell">Banking agents manage transactions on paper with no backup</td><td class="lang-td"><span class="lang-chip">React, Node.js, MySQL</span></td><td class="cat-cell">Finance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="HR" data-l="PHP, MySQL, Bootstrap"><td class="num">111</td><td class="title-cell">Digital Expense Claim System</td><td class="prob-cell">Staff expense claims are submitted on paper and delayed</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">HR</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="HR" data-l="PHP, MySQL, Bootstrap"><td class="num">112</td><td class="title-cell">Online Staff Recruitment Portal</td><td class="prob-cell">HR teams advertise jobs and shortlist candidates manually</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">HR</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Legal" data-l="PHP, MySQL, Bootstrap"><td class="num">113</td><td class="title-cell">Contract Management System</td><td class="prob-cell">Organizations lose track of contract renewal deadlines</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Legal</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Legal" data-l="PHP, MySQL, Bootstrap"><td class="num">114</td><td class="title-cell">Online Will and Estate Registry</td><td class="prob-cell">People die without accessible digital records of their wishes</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Legal</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Environment" data-l="PHP, MySQL, Google Maps API"><td class="num">115</td><td class="title-cell">E-Waste Collection Portal</td><td class="prob-cell">Electronic waste is dumped inappropriately due to no collection system</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Google Maps API</span></td><td class="cat-cell">Environment</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Environment" data-l="Python, Django, IoT API"><td class="num">116</td><td class="title-cell">Air Quality Monitoring Dashboard</td><td class="prob-cell">Urban residents lack real-time data on local air pollution levels</td><td class="lang-td"><span class="lang-chip">Python, Django, IoT API</span></td><td class="cat-cell">Environment</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Environment" data-l="Python, Django, SMS API"><td class="num">117</td><td class="title-cell">Forest Fire Alert System</td><td class="prob-cell">Forest fires spread undetected due to lack of early warning</td><td class="lang-td"><span class="lang-chip">Python, Django, SMS API</span></td><td class="cat-cell">Environment</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Health" data-l="Flutter, Firebase, Video API"><td class="num">118</td><td class="title-cell">Telemedicine Consultation App</td><td class="prob-cell">Rural patients cannot access specialist doctors without travel</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase, Video API</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="App" data-c="Health" data-l="Flutter, Firebase, SMS API"><td class="num">119</td><td class="title-cell">Maternal Health Tracking App</td><td class="prob-cell">Expectant mothers miss antenatal appointments due to forgetfulness</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase, SMS API</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Health" data-l="React, Firebase"><td class="num">120</td><td class="title-cell">Mental Health Resource Directory</td><td class="prob-cell">People in crisis cannot quickly find nearby mental health services</td><td class="lang-td"><span class="lang-chip">React, Firebase</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Health" data-l="PHP, MySQL, QR Code Library"><td class="num">121</td><td class="title-cell">Digital Pharmacy Prescription System</td><td class="prob-cell">Patients lose paper prescriptions before reaching the pharmacy</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, QR Code Library</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, Bootstrap"><td class="num">122</td><td class="title-cell">School Feeding Programme Tracker</td><td class="prob-cell">Schools lack digital tools to track daily meal distribution</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Education" data-l="PHP, MySQL, Bootstrap"><td class="num">123</td><td class="title-cell">Student Loan Application Portal</td><td class="prob-cell">Student loan applications are paper-based and take too long</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Education</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Both" data-c="Education" data-l="React, Node.js, Firebase"><td class="num">124</td><td class="title-cell">Online Language Learning App</td><td class="prob-cell">Learners lack affordable platforms to learn local languages</td><td class="lang-td"><span class="lang-chip">React, Node.js, Firebase</span></td><td class="cat-cell">Education</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Both" data-c="Transport" data-l="React, Google Maps API"><td class="num">125</td><td class="title-cell">Disability-Friendly Public Transport Guide</td><td class="prob-cell">Physically challenged commuters lack accessible route information</td><td class="lang-td"><span class="lang-chip">React, Google Maps API</span></td><td class="cat-cell">Transport</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="App" data-c="Transport" data-l="Flutter, Google Maps, Firebase"><td class="num">126</td><td class="title-cell">Ride-Sharing Coordination App</td><td class="prob-cell">Commuters traveling the same route lack a carpooling platform</td><td class="lang-td"><span class="lang-chip">Flutter, Google Maps, Firebase</span></td><td class="cat-cell">Transport</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Governance" data-l="PHP, MySQL, Google Maps API"><td class="num">127</td><td class="title-cell">Pothole Reporting System</td><td class="prob-cell">Road defects go unreported and unrepaired for long periods</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Google Maps API</span></td><td class="cat-cell">Governance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Governance" data-l="PHP, MySQL, Bootstrap"><td class="num">128</td><td class="title-cell">Public Procurement Tracker</td><td class="prob-cell">Procurement processes lack transparency and public visibility</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Governance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Governance" data-l="React, Chart.js, Firebase"><td class="num">129</td><td class="title-cell">County Budget Visualization Tool</td><td class="prob-cell">Citizens cannot easily understand how county funds are spent</td><td class="lang-td"><span class="lang-chip">React, Chart.js, Firebase</span></td><td class="cat-cell">Governance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Finance" data-l="PHP, MySQL, Bootstrap"><td class="num">130</td><td class="title-cell">Digital Tax Filing Assistant</td><td class="prob-cell">Small business owners struggle to file taxes correctly</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Finance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Finance" data-l="PHP, MySQL, Bootstrap"><td class="num">131</td><td class="title-cell">Insurance Claims Management System</td><td class="prob-cell">Insurance claimants experience slow manual claims processing</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Finance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Both" data-c="Commerce" data-l="PHP, MySQL, M-Pesa API"><td class="num">132</td><td class="title-cell">Artisan Marketplace Platform</td><td class="prob-cell">Local artisans lack a digital channel to sell their crafts</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, M-Pesa API</span></td><td class="cat-cell">Commerce</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Agriculture" data-l="PHP, MySQL, Bootstrap"><td class="num">133</td><td class="title-cell">Cold Storage Booking Platform</td><td class="prob-cell">Farmers cannot access cold storage facilities easily</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Agriculture</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Commerce" data-l="Flutter, Google Maps, Firebase"><td class="num">134</td><td class="title-cell">Street Food Vendor Finder App</td><td class="prob-cell">Customers cannot locate nearby street food vendors</td><td class="lang-td"><span class="lang-chip">Flutter, Google Maps, Firebase</span></td><td class="cat-cell">Commerce</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Commerce" data-l="PHP, MySQL, Chart.js"><td class="num">135</td><td class="title-cell">Digital Inventory for Supermarkets</td><td class="prob-cell">Supermarkets restock shelves without tracking real-time stock levels</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Chart.js</span></td><td class="cat-cell">Commerce</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Services" data-l="PHP, MySQL, Bootstrap"><td class="num">136</td><td class="title-cell">Online Beauty Salon Booking</td><td class="prob-cell">Salons manage bookings informally via phone calls</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Services</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Services" data-l="Flutter, Google Maps, Firebase"><td class="num">137</td><td class="title-cell">Plumber and Electrician Finder</td><td class="prob-cell">Homeowners cannot quickly locate vetted tradespeople nearby</td><td class="lang-td"><span class="lang-chip">Flutter, Google Maps, Firebase</span></td><td class="cat-cell">Services</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Both" data-c="Environment" data-l="React, Google Maps API"><td class="num">138</td><td class="title-cell">Waste Recycling Points Locator</td><td class="prob-cell">Residents don&#x27;t know where to take recyclable materials</td><td class="lang-td"><span class="lang-chip">React, Google Maps API</span></td><td class="cat-cell">Environment</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Governance" data-l="PHP, MySQL, Bootstrap"><td class="num">139</td><td class="title-cell">Digital Birth and Death Registry</td><td class="prob-cell">Civil registration relies on paper forms prone to loss</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Governance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, Bootstrap"><td class="num">140</td><td class="title-cell">Exam Timetable Management System</td><td class="prob-cell">Exam timetables are announced late and cause student clashes</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, Bootstrap"><td class="num">141</td><td class="title-cell">Campus Lost and Found Portal</td><td class="prob-cell">Lost items on campus are never returned due to poor tracking</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Education" data-l="React, Node.js, MySQL"><td class="num">142</td><td class="title-cell">Student Internship Placement Portal</td><td class="prob-cell">Students struggle to find and apply for industry attachments</td><td class="lang-td"><span class="lang-chip">React, Node.js, MySQL</span></td><td class="cat-cell">Education</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, Bootstrap"><td class="num">143</td><td class="title-cell">Digital Homework Submission System</td><td class="prob-cell">Teachers receive handwritten homework that is hard to grade fairly</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Both" data-c="Social" data-l="React, Firebase"><td class="num">144</td><td class="title-cell">Online Sports Betting Awareness App</td><td class="prob-cell">Youth lack education on the risks of sports betting addiction</td><td class="lang-td"><span class="lang-chip">React, Firebase</span></td><td class="cat-cell">Social</td><td class="type-td"><span class="badge bb">Both</span></td></tr>
+<tr data-t="Web" data-c="Governance" data-l="PHP, MySQL, Bootstrap"><td class="num">145</td><td class="title-cell">Digital Voter Registration Checker</td><td class="prob-cell">Voters cannot confirm their registration status without visiting offices</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Governance</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Finance" data-l="Flutter, Firebase"><td class="num">146</td><td class="title-cell">Community Savings Tracker App</td><td class="prob-cell">Informal community saving groups lack transparent financial records</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase</span></td><td class="cat-cell">Finance</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Academic" data-l="PHP, MySQL, SMS API"><td class="num">147</td><td class="title-cell">Automated School Fee Reminder</td><td class="prob-cell">Parents miss fee deadlines due to lack of timely reminders</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, SMS API</span></td><td class="cat-cell">Academic</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Education" data-l="React, Node.js, Firebase"><td class="num">148</td><td class="title-cell">Online Portfolio Builder for Students</td><td class="prob-cell">Students lack a professional digital presence when job-seeking</td><td class="lang-td"><span class="lang-chip">React, Node.js, Firebase</span></td><td class="cat-cell">Education</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="App" data-c="Health" data-l="Flutter, Firebase"><td class="num">149</td><td class="title-cell">Digital Food Diary and Nutrition App</td><td class="prob-cell">People with chronic illness struggle to track daily food intake</td><td class="lang-td"><span class="lang-chip">Flutter, Firebase</span></td><td class="cat-cell">Health</td><td class="type-td"><span class="badge ba">App</span></td></tr>
+<tr data-t="Web" data-c="Real Estate" data-l="PHP, MySQL, Bootstrap"><td class="num">150</td><td class="title-cell">Land Valuation and Advisory Tool</td><td class="prob-cell">Property buyers lack accurate land pricing data before purchase</td><td class="lang-td"><span class="lang-chip">PHP, MySQL, Bootstrap</span></td><td class="cat-cell">Real Estate</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+<tr data-t="Web" data-c="Security" data-l="React, Node.js, Firebase"><td class="num">151</td><td class="title-cell">Cybersecurity Awareness Training Portal</td><td class="prob-cell">Employees lack training on phishing, malware, and data breaches</td><td class="lang-td"><span class="lang-chip">React, Node.js, Firebase</span></td><td class="cat-cell">Security</td><td class="type-td"><span class="badge bw">Web</span></td></tr>
+</tbody>
+    </table>
+    <div class="no-results" id="nr">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <strong>No projects found</strong>
+      <p>Try a different search term or clear the filters.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  Compiled and Prepared by <strong>Jonathan Mawia</strong> &nbsp;|&nbsp; Computer Science Lecturer &nbsp;|&nbsp; <strong>NIBS College</strong>
+</div>
+
+<script>
+/* Filters the pre-rendered rows. Plain ES5 so it runs on older phones too. */
+(function () {
+  var tb = document.getElementById('tb');
+  var rows = tb.getElementsByTagName('tr');
+  var st = document.getElementById('st');
+  var nr = document.getElementById('nr');
+  var total = rows.length;
+  var cache = [];
+  for (var i = 0; i < total; i++) {
+    var c = rows[i].cells;
+    cache.push({
+      row: rows[i], titleCell: c[1], probCell: c[2],
+      title: c[1].textContent || c[1].innerText,
+      prob: c[2].textContent || c[2].innerText,
+      text: (rows[i].textContent || rows[i].innerText).toLowerCase(),
+      t: rows[i].getAttribute('data-t'), c: rows[i].getAttribute('data-c'), l: rows[i].getAttribute('data-l')
+    });
+  }
+  function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function hl(s, q) {
+    if (!q) return esc(s);
+    var low = s.toLowerCase(), out = '', pos = 0, idx;
+    while ((idx = low.indexOf(q, pos)) > -1) {
+      out += esc(s.substring(pos, idx)) + '<mark>' + esc(s.substr(idx, q.length)) + '</mark>';
+      pos = idx + q.length;
+    }
+    return out + esc(s.substring(pos));
+  }
+  var timer = null;
+  function run() {
+    var q = document.getElementById('search').value.toLowerCase().replace(/^\s+|\s+$/g, '');
+    var tf = document.getElementById('tf').value;
+    var lf = document.getElementById('lf').value;
+    var cf = document.getElementById('cf').value;
+    var shown = 0;
+    for (var i = 0; i < total; i++) {
+      var r = cache[i];
+      var ok = (!q || r.text.indexOf(q) > -1) && (!tf || r.t === tf) && (!lf || r.l.indexOf(lf) > -1) && (!cf || r.c === cf);
+      r.row.className = ok ? '' : 'hidden-row';
+      if (ok) {
+        shown++;
+        r.titleCell.innerHTML = hl(r.title, q);
+        r.probCell.innerHTML = hl(r.prob, q);
+      }
+    }
+    nr.style.display = shown ? 'none' : 'block';
+    st.innerHTML = shown + ' of ' + total;
+  }
+  window.f = function () { clearTimeout(timer); timer = setTimeout(run, 120); };
+})();
+</script>
+</body>
+</html>
